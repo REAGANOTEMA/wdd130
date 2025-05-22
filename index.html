@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Reagan Otema – WDD130 Home Page</title>
-  <meta name="description" content="Reagan Otema's WDD130 Home Page. Learn about me, my web development journey, and Uganda.">
-  <meta name="author" content="Reagan Otema">
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reagan Otema | WDD130 Home Page</title>
+
+  <!-- Meta Tags -->
+  <meta name="description" content="Reagan Otema's WDD130 Home Page showcasing web development skills and personal info. Based in Jinja, Uganda.">
+  <meta name="author" content="Reagan Otema" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-  <nav>
-    <a href="#">Home</a>
-    <a href="wwr/about.html">Rafting Website</a>
-  </nav>
-    <h1>Welcome to My Home Page</h1>
+    <h1>Welcome to Reagan Otema's Home Page</h1>
   </header>
 
   <main>
-    <h2>About Me</h2>
-    <p>Hello! I'm Reagan Otema from Uganda. I am currently learning web development through WDD130. This course has given me exciting skills in HTML and CSS.</p>
-    <img src="images/reagan-profile.jpg"width="40"height="30" alt="Profile photo of Reagan Otema">
+    <section class="intro">
+      <h2>About Me</h2>
+      <div class="flex-container">
+        <img src="images/reagan-profile.jpg" alt="Reagan Otema profile photo" />
+        <div>
+          <p>Hi, I'm <strong>Reagan Otema</strong>, a passionate and hardworking web development student currently enrolled in <strong>WDD130</strong> through BYU–Pathway Worldwide.</p>
+          <p>I live in the beautiful town of <strong>Jinja, Uganda</strong>, on Spire Road. I'm learning how to build responsive, accessible, and elegant websites using HTML, CSS, and soon JavaScript!</p>
+          <p>When I'm not coding, I enjoy spending time in nature, learning new skills, and helping others through community projects. My goal is to become a full-stack developer and use technology to solve real-world problems in Africa.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <aside>
-    <h2>Uganda</h2>
-    <img src="images/uganda-representation.jpg" width="100" height="50"alt="Scenic view representing Uganda">
-    <p>Uganda, known as the Pearl of Africa, is rich with natural beauty, wildlife, and cultural diversity. It is home to Lake Victoria, the source of the Nile River, and beautiful green hills. Uganda's national bird, the Crested Crane, symbolizes peace and beauty.</p>
+    <h2>Jinja, Uganda</h2>
+    <div class="flex-container">
+      <img src="images/Jinja Bridge.jpg" alt="Scenic view of Jinja" />
+      <div>
+        <p><strong>Jinja</strong> is one of Uganda’s most iconic cities, known as the source of the Nile River. It's a lively place full of culture, warm people, and beautiful views.</p>
+        <p>From bungee jumping over the Nile to enjoying calm lakeside breezes, Jinja blends excitement with peace. It’s also a growing tech hub where young people are embracing digital innovation and entrepreneurship.</p>
+        <p>I feel proud to represent Jinja in my web development journey!</p>
+      </div>
+    </div>
   </aside>
 
   <footer>
-    <p>&copy; 2025 Reagan Otema</p>
+    <p>&copy; 2025 Reagan Otema | 📞 +256 772 514 889 | 📧 <a href="mailto:rotema@byupathway.edu">rotema@byupathway.edu</a></p>
   </footer>
 </body>
 </html>
+
