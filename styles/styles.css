@@ -72,7 +72,7 @@ footer {
       padding: 20px;
     }
 
-    h1, h2 {
+    h1 {
       color: #003366;
       margin: 8px 0;
     }
@@ -100,6 +100,14 @@ footer {
       font-size: 0.95rem;
       margin-top: 40px;
     }
+    nav {
+      color: white;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
    nav ul {
       list-style: none;
       padding: 0;
@@ -120,4 +128,8 @@ footer {
 
     nav ul li a:hover {
       text-decoration: underline;
+    }
+  h2 {
+      color: #003366;
+      margin: 8px 0;
     }
