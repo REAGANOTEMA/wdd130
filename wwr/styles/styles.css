@@ -1,0 +1,40 @@
+/* Main content styling */
+main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* Exclusive selector for main image */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Aside styling */
+aside {
+  width: 800px;
+  margin: 20px auto;
+  border: 2px solid #444;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* Image inside aside */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Reset paragraph padding */
+p {
+  padding: 0;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  border-top: 2px solid #999;
+  text-align: center;
+  padding-top: 10px;
+}
