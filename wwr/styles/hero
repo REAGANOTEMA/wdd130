@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Reagan Otema is the founder of Source of the Nile Rafting in Jinja, Uganda. Learn more about his passion for rafting and adventure tourism." />
-  <meta name="author" content="Reagan Otema" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us - Rafting Adventure</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="stylesheet" href="rafting.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -18,13 +15,37 @@
     <h1>Rafting Adventure</h1>
     <nav>
       <ul>
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- Hero Banner - Centered Text with Background -->
+  <section class="hero-banner">
+    <div class="hero-text">
+      <h2>Explore the Wild Waters of Uganda</h2>
+      <p>Adventure Awaits at the Source of the Nile</p>
+    </div>
+  </section>
+
+  <!-- Hero Banner - Top Left Text, No Background -->
+  <section class="hero-banner top-left">
+    <div class="hero-text no-bg">
+      <h2>Discover New Adventures</h2>
+      <p>Thrill and Nature in Perfect Harmony</p>
+    </div>
+  </section>
+
+  <!-- Hero Banner - Bottom Left Text with Background -->
+  <section class="hero-banner bottom-left" style="height: 350px; background-image: url('images/second-hero.jpg');">
+    <div class="hero-text">
+      <h2>Relax and Unwind</h2>
+      <p>Enjoy Sunset Drifts and Peaceful Waters</p>
+    </div>
+  </section>
 
   <main>
     <section id="history">
@@ -60,29 +81,8 @@
           <figcaption>Thrill Rapid Run</figcaption>
         </figure>
         <figure>
-          <img src="images/" alt="Sunset Drift Relaxation" />
+          <img src="images/ad1.jpg" alt="Sunset Drift Relaxation" />
           <figcaption>Sunset Drift Relaxation</figcaption>
-        </figure>
-        <!-- Additional images for full requirement -->
-        <figure>
-          <img src="images/raft...jpg" alt="Group Rafting Celebration" />
-          <figcaption>Group Rafting Celebration</figcaption>
-        </figure>
-        <figure>
-          <img src="images/raft..jpg" alt="Rafting Safety Training" />
-          <figcaption>Rafting Safety Training</figcaption>
-        </figure>
-        <figure>
-          <img src="images/raft1.jpg" alt="River Guide in Action" />
-          <figcaption>River Guide in Action</figcaption>
-        </figure>
-        <figure>
-          <img src="images/wild life.jpg" alt="Wildlife Along the Nile" />
-          <figcaption>Wildlife Along the Nile</figcaption>
-        </figure>
-        <figure>
-          <img src="images/raft.......jpg" alt="Sunset over the Nile" />
-          <figcaption>Sunset over the Nile</figcaption>
         </figure>
       </div>
     </section>
