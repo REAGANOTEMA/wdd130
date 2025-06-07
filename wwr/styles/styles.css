@@ -7,7 +7,7 @@ main {
 /* Exclusive selector for main image */
 main img {
   width: 150px;
-  /* height auto is default, so it can be omitted safely */
+  height: auto;
 }
 
 /* Aside styling */
@@ -23,7 +23,7 @@ aside {
 /* Image inside aside */
 aside img {
   width: 200px;
-  /* height auto omitted */
+  height: auto;
 }
 
 /* Reset paragraph padding */
