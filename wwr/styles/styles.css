@@ -191,3 +191,65 @@ footer {
     max-width: 180px;
   }
 }
+  body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f7fcff;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Logo styling */
+    header img.logo {
+      max-width: 80px;
+      height: auto;
+      margin-bottom: 12px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      background: white;
+      padding: 5px;
+    }
+
+    main, aside {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #003366;
+      margin: 8px 0;
+    }
+
+    main img, aside img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 10px;
+    }
+
+    aside {
+      background-color: #e8f1fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+      margin-top: 40px;
+    }
