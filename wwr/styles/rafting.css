@@ -75,7 +75,6 @@ button, .cta-button {
 }
 
 /* === Home Page === */
-/* === Enhanced Home Hero Section with Background Image & Overlay === */
 body.home .hero {
   position: relative;
   height: 100vh;
@@ -90,7 +89,7 @@ body.home .hero {
 }
 
 body.home .hero img {
-  display: none; /* hide the img tag since we use background */
+  display: none;
 }
 
 body.home .hero-overlay {
@@ -116,7 +115,6 @@ body.home .hero-overlay p {
   line-height: 1.4;
 }
 
-/* Yellow Call-to-Action Button */
 body.home .btn-cta {
   background-color: #FFD700;
   color: #000;
@@ -137,7 +135,6 @@ body.home .btn-cta:focus {
   outline: none;
 }
 
-/* Responsive Text for Hero */
 @media (max-width: 768px) {
   body.home .hero-overlay h1 {
     font-size: 2.2rem;
@@ -148,7 +145,104 @@ body.home .btn-cta:focus {
 }
 
 /* === Contact Page === */
-body.contact .map {
+body.contact .contact-info,
+body.contact .contact-form,
+body.contact .founder-section,
+body.contact .gallery,
+body.contact .map-section {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+body.contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+body.contact label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+body.contact input[type="text"],
+body.contact input[type="email"],
+body.contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+body.contact input[type="radio"],
+body.contact input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+body.contact button.btn-cta {
+  background-color: #0099cc;
+  color: white;
+  border: none;
+  padding: 0.85rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+body.contact button.btn-cta:hover {
+  background-color: #0077aa;
+}
+
+body.contact address {
+  font-style: normal;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+body.contact .founder-photo {
+  width: 150px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  display: block;
+}
+
+body.contact .founder-message {
+  text-align: center;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+body.contact .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+body.contact .gallery figure {
+  text-align: center;
+}
+
+body.contact .gallery img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+body.contact .gallery figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
+body.contact .map-section {
   text-align: center;
   margin-top: 2rem;
 }
@@ -159,20 +253,6 @@ body.contact iframe {
   height: 400px;
   border: none;
   border-radius: 10px;
-}
-
-body.contact .founder-photo {
-  width: 150px;
-  border-radius: 50%;
-  margin: 1rem auto;
-  display: block;
-}
-
-body.contact .founder-bio {
-  text-align: center;
-  font-style: italic;
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
 }
 
 /* === Trips Page === */
@@ -243,33 +323,7 @@ body.trips .cta-contact a:hover {
 footer {
   font-size: 0.9rem;
   background-color: #003366;
-  color: #ffffff;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-
-/* === Utilities === */
-.text-center {
+  color: white;
+  padding: 1rem;
   text-align: center;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-.mt-4 {
-  margin-top: 4rem;
-}
-
-.mb-2 {
-  margin-bottom: 2rem;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.max-w-600 {
-  max-width: 600px;
-  margin: 0 auto;
 }

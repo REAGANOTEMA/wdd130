@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta
     name="description"
     content="Contact White Rafting Uganda for questions, bookings, and more about rafting adventures on the Nile."
-  />
-  <meta name="author" content="Reagan Otema" />
+  >
+  <meta name="author" content="Reagan Otema">
   <title>Contact Us - White Rafting Uganda</title>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap"
     rel="stylesheet"
-  />
+  >
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
-<body>
+<body class="contact">
   <header>
-    <img src="images/logo.png" alt="White Rafting Uganda Logo" />
+    <img src="images/logo.png" alt="White Rafting Uganda Logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -40,10 +40,10 @@
       </p>
 
       <address>
-        <strong>White Rafting Uganda</strong><br />
-        Nile Crescent, Near Source of the Nile<br />
-        Jinja, Uganda<br />
-        Email: <a href="mailto:rotema@byupathway.edu">rotema@byupathway.edu</a><br />
+        <strong>White Rafting Uganda</strong><br>
+        Nile Crescent, Near Source of the Nile<br>
+        Jinja, Uganda<br>
+        Email: <a href="mailto:rotema@byupathway.edu">rotema@byupathway.edu</a><br>
         Phone: <a href="tel:+256772514889">+256 772 514 889</a>
       </address>
     </section>
@@ -52,13 +52,35 @@
       <h2>Send Us a Message</h2>
       <form action="#" method="post" aria-label="Contact form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Your full name" />
+        <input type="text" id="name" name="name" required placeholder="Your full name">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="6" required placeholder="Write your message here"></textarea>
+
+        <p>Preferred Contact Method:</p>
+
+        <label for="radio-email">
+          <input type="radio" id="radio-email" name="contact-method" value="email">
+          Email
+        </label>
+
+        <label for="radio-phone">
+          <input type="radio" id="radio-phone" name="contact-method" value="phone">
+          Phone
+        </label>
+
+        <label for="radio-whatsapp">
+          <input type="radio" id="radio-whatsapp" name="contact-method" value="whatsapp">
+          WhatsApp
+        </label>
+
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+          Subscribe to our newsletter
+        </label>
 
         <button type="submit" class="btn-cta">Send Message</button>
       </form>
@@ -66,10 +88,49 @@
 
     <section class="founder-section">
       <h2>Meet Our Founder</h2>
-      <img src="images/reagan-profile.jpg" alt="Reagan Otema - Founder of White Rafting Uganda" class="founder-photo" />
+      <img src="images/reagan-profile.jpg" alt="Reagan Otema - Founder of White Rafting Uganda" class="founder-photo">
       <p class="founder-message">
         "With a deep love for the Nile and a passion for unforgettable adventure, Reagan Otema founded White Rafting Uganda to bring people together through the thrill of water and the heart of Uganda. Join us and feel the spirit of the Nile!"
       </p>
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+
+      <figure>
+        <img src="images/herot.jpg" alt="Rafting guide team member">
+        <figcaption>
+          Our experienced rafting guides lead with skill and passion, ensuring your adventure on the Nile is safe, exciting, and unforgettable.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/her.jpg" alt="Safety gear check">
+        <figcaption>
+          Thorough safety checks and equipment maintenance are a top priority, so you can enjoy every rapid with complete peace of mind.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/rafthero.jpg" alt="Raft launching">
+        <figcaption>
+          Launching rafts with precision and care, our team prepares you for the thrilling journey ahead on Uganda’s beautiful Nile River.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/raft5.jpg" alt="Smiling guests">
+        <figcaption>
+          Smiles say it all—our guests love the adrenaline rush and natural beauty, creating memories that last a lifetime.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/dam1.jpg" alt="White water rapid shot">
+        <figcaption>
+          Experience the rush of white water rapids, expertly navigated by our guides to bring you the best adventure safely.
+        </figcaption>
+      </figure>
     </section>
 
     <section class="map-section">
@@ -79,8 +140,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.833252132024!2d33.1905199!3d0.4431402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbffb8b4c8697%3A0xc8b16c0c2d5b2a45!2sNile%20Crescent%2C%20Jinja!5e0!3m2!1sen!2sug!4v1718040000000!5m2!1sen!2sug"
         width="100%"
         height="400"
-        style="border:0;"
-        allowfullscreen=""
+        allowfullscreen
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
