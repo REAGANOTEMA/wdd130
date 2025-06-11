@@ -2,20 +2,27 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rafting Adventure - Explore thrilling whitewater rafting trips on the Nile in Jinja, Uganda. Safe, fun, and unforgettable!" />
-  <meta name="author" content="Reaan Otema" />
-  <title>Home | Rafting Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Welcome to Source of the Nile Rafting, your gateway to thrilling whitewater rafting adventures in Uganda." />
+  <meta name="author" content="Reagan Otema" />
+  <title>Home - Source of the Nile Rafting</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/-Reagan.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
-<body>
+<body class="home">
   <header>
-    <img src="images/logo.png" alt="Rafting Adventure Logo" class="logo" />
+    <img src="images/logo.png" alt="Source of the Nile Rafting Logo" />
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" aria-current="page">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
       <a href="contact.html">Contact</a>
@@ -23,39 +30,56 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-label="Hero Section with Rafting Adventure Background">
       <div class="hero-overlay">
-        <h1>Welcome to Rafting Adventure</h1>
-        <p>Experience world-class whitewater rafting in Jinja, Uganda. Choose your thrill level and make memories that last a lifetime!</p>
-        <a href="trips.html" class="cta-button">Explore Trips</a>
+        <h1>Source of the Nile Rafting</h1>
+        <p>Your Adventure Awaits — Experience the Thrill of a Lifetime on Uganda's Legendary Nile River.</p>
+        <a href="trips.html" class="btn-cta">View Trips</a>
       </div>
     </section>
 
-    <section class="quote">
-      <blockquote>
-        "Life is a journey, not a destination. As we travel along life's pathway, we encounter challenges, obstacles, and uncertainties. But we must not permit these to divert us from our destiny. We must continue on, even when the road ahead seems uncertain. We must finish strong."
-        <footer>– President Thomas S. Monson, "Finishers Wanted", Ensign, June 2001</footer>
-      </blockquote>
-    </section>
+   <section class="features-grid">
+  <article>
+    <img src="images/herror.jpg" alt="Group of rafters paddling through a rapid on the Nile River" />
+    <h2>Why Raft with Us?</h2>
+    <p>Safety, professionalism, and unforgettable memories on every trip, guaranteed by our experienced team.</p>
+    <p>We offer unmatched expertise and a passion for adventure. Our team is dedicated to making each rafting journey a thrilling, safe, and unforgettable experience, tailored to both fun seekers and nature lovers.</p>
+  </article>
+  <article>
+    <img src="images/GnR.jpg" alt="Professional rafting guide steering a raft on the Nile" />
+    <h2>Experienced Guides</h2>
+    <p>Our expert guides know every rapid and eddy on the Nile to keep you safe and exhilarated throughout.</p>
+    <p>Our guides bring years of experience and local knowledge, ensuring every trip is safe, educational, and exhilarating. They’re trained to lead with confidence, making your experience both fun and secure from start to finish.</p>
+  </article>
+  <article>
+    <img src="images/hero.jpg" alt="High-quality whitewater rafting equipment prepared for use" />
+    <h2>Top-Notch Equipment</h2>
+    <p>We provide all necessary gear, rigorously maintained for your comfort and safety on the river.</p>
+    <p>Our state-of-the-art rafting equipment is regularly inspected and maintained to meet international safety standards. From helmets to rafts, we ensure you’re outfitted with the best gear for a safe adventure.</p>
+  </article>
+  <article>
+    <img src="images/heroraft.jpg" alt="Adventurous rafters riding different levels of whitewater" />
+    <h2>Adventure for All Levels</h2>
+    <p>Whether beginner or pro, our trips are tailored to challenge and excite every skill level.</p>
+    <p>We offer customizable rafting experiences for all ages and abilities. Whether you're looking for a gentle float or a high-adrenaline challenge, we have the perfect trip to match your adventure level.</p>
+  </article>
+</section>
 
-    <section class="highlight">
-      <h2>Adventure Highlight</h2>
-      <img src="images/shore.jpg" alt="Rafting through the rapids" class="highlight-img" />
-    </section>
 
     <section class="newsletter">
       <h2>Subscribe to Our Newsletter</h2>
-      <form action="#" method="post">
-        <label for="email">Enter your email:</label>
-        <input type="email" id="email" name="email" required />
-        <button type="submit">Subscribe</button>
+      <form action="#" method="post" aria-label="Subscribe to newsletter">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        <button type="submit" class="btn-cta">Subscribe</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Rafting Adventure | Reaan Otema</p>
-    <p>Jinja, Uganda | +256 772 514 889 | <a href="mailto:rotema@byupathway.edu">rotema@byupathway.edu</a></p>
+    <p>
+      &copy; 2025 Source of the Nile Rafting | Reagan Otema | rotema@byupathway.edu | +256772514889 | Jinja, Uganda
+    </p>
   </footer>
 </body>
 </html>

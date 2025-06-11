@@ -1,119 +1,275 @@
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
+/* === Global Styles === */
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
-h1, h2 {
-  margin: 0.5rem 0;
-}
-
-/* Header with CSS Grid */
-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  background-color: #005f73;
-  color: white;
+header, footer {
+  background-color: #003366;
+  color: #ffffff;
   padding: 1rem;
+  text-align: center;
 }
 
 header img {
-  width: 50px;
-  height: auto;
+  max-width: 120px;
+  display: block;
+  margin: 0 auto;
 }
 
-header h1 {
-  font-size: 1.5rem;
-  margin-left: 1rem;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
+nav {
+  margin-top: 1rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  font-weight: bold;
 }
 
 nav a:hover {
-  background-color: #0a9396;
-  border-radius: 5px;
+  text-decoration: underline;
 }
 
-/* History and Contact Info */
-#history, #contact-info {
-  padding: 2rem;
-  background-color: #e0f7fa;
-  border-radius: 8px;
-  margin: 1rem;
+main {
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-#history h2, #contact-info h2 {
-  color: #005f73;
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 1rem;
 }
 
-#contact-info p {
-  margin: 0.5rem 0;
-}
-
-/* Adventures section */
-#adventures {
-  padding: 2rem;
-}
-
-#adventures h2 {
-  text-align: center;
-  color: #005f73;
-}
-
-.adventure-gallery {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding: 1rem 0;
-}
-
-#adventures figure {
-  flex: 0 0 auto;
-  width: 200px;
-  margin: 0;
-  text-align: center;
-}
-
-#adventures img {
-  width: 100%;
+img {
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-#adventures figcaption {
-  margin-top: 0.5rem;
-}
-
-/* Footer */
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #005f73;
+button, .cta-button {
+  background-color: #0099cc;
   color: white;
-  padding: 1rem;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
-footer .social {
+.cta-button:hover {
+  background-color: #0077aa;
+}
+
+/* === Home Page === */
+/* === Enhanced Home Hero Section with Background Image & Overlay === */
+body.home .hero {
+  position: relative;
+  height: 100vh;
+  background: url('../images/riverhero.webp') no-repeat center center/cover;
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
 }
 
-footer .social img {
-  width: 24px;
-  height: 24px;
+body.home .hero img {
+  display: none; /* hide the img tag since we use background */
+}
+
+body.home .hero-overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+body.home .hero-overlay h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+body.home .hero-overlay p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+/* Yellow Call-to-Action Button */
+body.home .btn-cta {
+  background-color: #FFD700;
+  color: #000;
+  padding: 0.85rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+body.home .btn-cta:hover,
+body.home .btn-cta:focus {
+  background-color: #e6c200;
+  outline: none;
+}
+
+/* Responsive Text for Hero */
+@media (max-width: 768px) {
+  body.home .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+  body.home .hero-overlay p {
+    font-size: 1rem;
+  }
+}
+
+/* === Contact Page === */
+body.contact .map {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+body.contact iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+}
+
+body.contact .founder-photo {
+  width: 150px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  display: block;
+}
+
+body.contact .founder-bio {
+  text-align: center;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+/* === Trips Page === */
+body.trips .trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+body.trips .trip-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+body.trips .trip-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+body.trips .trip-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+body.trips .trip-summary {
+  margin-top: 2rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+body.trips .trip-summary th, 
+body.trips .trip-summary td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+body.trips .trip-summary th {
+  background-color: #0099cc;
+  color: white;
+}
+
+body.trips .cta-contact {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+body.trips .cta-contact a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #0099cc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+body.trips .cta-contact a:hover {
+  background-color: #0077aa;
+}
+
+/* === Footer === */
+footer {
+  font-size: 0.9rem;
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* === Utilities === */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.max-w-600 {
+  max-width: 600px;
+  margin: 0 auto;
 }
